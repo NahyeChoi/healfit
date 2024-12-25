@@ -30,4 +30,9 @@ public class GymEntity {
 
     @Column
     private String gymPassword;
+
+    public GymEntity(String gymNo, String gymPassword) {
+        this.gymNo = gymNo;
+        this.gymPassword = gymPassword;
+    }
 }

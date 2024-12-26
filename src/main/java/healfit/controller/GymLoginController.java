@@ -2,7 +2,6 @@ package healfit.controller;
 
 import healfit.dto.GymDto;
 import healfit.dto.GymLoginDto;
-import healfit.service.GymLoginService;
 import healfit.service.GymService;
 import healfit.utils.SessionConst;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,9 +19,6 @@ public class GymLoginController {
 
     @Autowired
     GymService gymService;
-
-    @Autowired
-    GymLoginService gymLoginService;
 
     // 헬스장 로그인
     @PostMapping("")

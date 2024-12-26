@@ -31,7 +31,6 @@ public class GymService {
         GymEntity gym = gymRepository.findByGymNo(gymNo);
 
         if (gym.getGymNo().equals(updateGym.getGymNo())
-                && gym.getGymName().equals(updateGym.getGymName())
                 && gym.getId().equals(updateGym.getId())) {
             if(!gym.getGymPassword().equals(updateGym.getGymPassword())) {
                 gym.setGymPassword(updateGym.getGymPassword());

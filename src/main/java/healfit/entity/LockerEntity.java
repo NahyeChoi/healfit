@@ -19,4 +19,7 @@ public class LockerEntity {
     @OneToOne(mappedBy = "locker")
     private MemberEntity member;
 
+    public LockerEntity(MemberEntity member) {
+        this.member = member;
+    }
 }

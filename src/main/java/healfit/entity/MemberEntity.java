@@ -33,9 +33,8 @@ public class MemberEntity {
     @Column
     private String address;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "locker_id")
     private LockerEntity locker;
-
 
 }

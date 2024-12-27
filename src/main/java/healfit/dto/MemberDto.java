@@ -1,5 +1,6 @@
 package healfit.dto;
 
+import healfit.entity.LockerEntity;
 import healfit.entity.MemberEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class MemberDto {
     private Boolean gender;
     private Date birthDate;
     private String address;
+    private LockerEntity locker;
 
     // Entity로 변환 메서드
     public MemberEntity toEntity() {
@@ -27,7 +29,8 @@ public class MemberDto {
                 this.phoneNumber,
                 this.gender,
                 this.birthDate,
-                this.address
+                this.address,
+                this.locker
         );
     }
 
@@ -39,7 +42,8 @@ public class MemberDto {
                 entity.getPhoneNumber(),
                 entity.getGender(),
                 entity.getBirthDate(),
-                entity.getAddress()
+                entity.getAddress(),
+                entity.getLocker()
         );
     }
 

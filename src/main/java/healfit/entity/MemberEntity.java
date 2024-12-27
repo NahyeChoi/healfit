@@ -32,4 +32,10 @@ public class MemberEntity {
 
     @Column
     private String address;
+
+    @OneToOne
+    @JoinColumn(name = "locker_id")
+    private LockerEntity locker;
+
+
 }
